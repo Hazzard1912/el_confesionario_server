@@ -10,7 +10,7 @@ class Server {
   constructor() {
     this.app = express();
     this.port = process.env.PORT;
-    this.allowedOrigins = [];
+    this.allowedOrigins = ["https://el-confesionario-1a819.web.app/"];
 
     this.paths = {
       confesion: "/api/confesion",

@@ -1,10 +1,3 @@
-# Esqueleto basico para construir facilmente un rest server
+# El confesionario rest server mysql
 
-Ejectuar ```npm install``` para reconstruir los modulos de node.
-
-Al hacerlo tendras a disposicion:
-bcryptjs, cors, dotenv, express, express-fileupload, express-validator, jsonwebtoken, uuid, mysql2 y sequelize.
-
-Esto es para crear facilmente el server. Note que se puede 
-usar otra base de datos tan facil como desinstalar mysql2 y
-sequelize y usar en su lugar la base de datos deseada con su libreria
+Rest server del proyecto el confesionario. Apenas estoy trabajando en el, y espero seguir agregando funcionalidades, pero de momento es un buen inicio.

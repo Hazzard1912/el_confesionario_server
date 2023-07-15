@@ -29,6 +29,9 @@ const comentarConfesion = async (req = request, res = response) => {
 
     const { comentario } = req.body;
 
+    console.log(comentario);
+    console.log('esto se ejecuta');
+
     console.log(confesion);
 
     const nuevoComentario = await Comentario.create({

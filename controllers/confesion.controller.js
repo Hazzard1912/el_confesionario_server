@@ -1,6 +1,7 @@
 const { request, response } = require("express");
 
 const Confesion = require("../models/confesion");
+const Confesion_Votos = require("../models/confesion-votos");
 
 const cargarConfesiones = async (req = request, res = response) => {
   try {
@@ -21,6 +22,10 @@ const postearConfesion = async (req = request, res = response) => {
     const nuevaConfesion = await Confesion.create({
       titulo,
       descripcion,
+    });
+
+    const asociarConfesionVotos = await Confesion_Votos.create({
+      confesionId: nuevaConfesion.id,
     });
 
     console.log(nuevaConfesion);
